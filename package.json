@@ -1,0 +1,35 @@
+{
+  "name": "phoenix-policy",
+  "version": "0.0.1",
+  "description": "Policies for Phoenix Project",
+  "main": "index.js",
+  "dependencies": {
+    "phoenix-error": "git+ssh://git@github.com:BTCChina/phoenix-error.git"
+  },
+  "devDependencies": {
+		"jsdoc": "*",
+    "should": "*",
+    "istanbul": "*"
+  },
+  "scripts": {
+    "build_docs": "jsdoc -c jsdoc.conf",
+    "start": "nodemon ./src/app.js",
+    "start_target": "nodemon ./src/utils/target.js",
+    "test": "node ./node_modules/mocha/bin/mocha",
+    "test_coverage": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BTCChina/phoenix-policy.git"
+  },
+  "keywords": [
+    "policy",
+    "nodejs"
+  ],
+  "author": "Frank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BTCChina/phoenix-policy/issues"
+  },
+  "homepage": "https://github.com/BTCChina/phoenix-erpolicyror#readme"
+}
