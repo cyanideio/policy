@@ -4,7 +4,7 @@
   "description": "Policies for Phoenix Project",
   "main": "index.js",
   "dependencies": {
-    "phoenix-error": "git+ssh://git@github.com:cyanideio/error.git"
+    "phoenix-error": "git+https://github.com/cyanideio/error"
   },
   "devDependencies": {
 		"jsdoc": "*",
