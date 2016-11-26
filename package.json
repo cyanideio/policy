@@ -1,10 +1,10 @@
 {
-  "name": "phoenix-policy",
+  "name": "cyanide-policy",
   "version": "0.0.1",
   "description": "Policies for Phoenix Project",
   "main": "index.js",
   "dependencies": {
-    "phoenix-error": "git+ssh://git@github.com:BTCChina/phoenix-error.git"
+    "phoenix-error": "git+ssh://git@github.com:cyanideio/error.git"
   },
   "devDependencies": {
 		"jsdoc": "*",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BTCChina/phoenix-policy.git"
+    "url": "git+https://github.com/cyanideio/policy.git"
   },
   "keywords": [
     "policy",
@@ -29,7 +29,7 @@
   "author": "Frank",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BTCChina/phoenix-policy/issues"
+    "url": "https://github.com/cyanideio/policy/issues"
   },
-  "homepage": "https://github.com/BTCChina/phoenix-erpolicyror#readme"
+  "homepage": "https://github.com/cyanideio/policy#readme"
 }
