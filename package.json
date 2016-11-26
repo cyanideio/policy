@@ -1,6 +1,6 @@
 {
   "name": "cyanide-policy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Policies for Phoenix Project",
   "main": "index.js",
   "dependencies": {
