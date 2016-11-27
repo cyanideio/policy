@@ -11,8 +11,5 @@ Genine Javascript Policy
 - Approves Single Condition
 - Automatically throws errors
 
-### Error Configuration
-__Configuration for single error looks like this:__
-
 ## Change Log
 Please Refer to [https://github.com/cyanideio/policy/releases](https://github.com/cyanideio/policy/releases)
