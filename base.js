@@ -15,7 +15,7 @@ class BasePolicy {
 	 * @param  {validator} validator [description]
 	 */
 	approve(validator) {
-		if (!this.constructor._approve(validator)) {
+		if (!this.constructor._approve(validator, this.args)) {
 			this.throwError()
 		}
 	}
@@ -25,7 +25,7 @@ class BasePolicy {
 	 * @param {user}
 	 * @return {Boolean}
 	 */
-	static _approve(validator) {
+	static _approve(validator, args) {
 		// Throws unimplemented error
 		throw new Error('Unimplemented')
 	}
