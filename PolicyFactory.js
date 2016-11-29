@@ -17,6 +17,7 @@ class PolicyFactory {
 	 */
 	build(policy) {
 		var policy_name
+		var policy_args
 		if (typeof(policy) === 'string') {
 			policy_name = policy
 			policy_args = {}
