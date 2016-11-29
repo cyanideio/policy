@@ -15,11 +15,21 @@ class PolicyFactory {
 	 * @param  {String} policy_name [description]
 	 * @return {Policy}             [description]
 	 */
-	build(policy_name) {
+	build(policy) {
+		var policy_name
+		if (typeof(policy) === 'string') {
+			policy_name = policy
+			policy_args = {}
+		}
+		if (typeof(policy) === 'object') {
+			policy_name = policy.name
+			policy_args = policy.args
+		}
 		let Policy = require(`../../${this.policy_path}/${policy_name}`)
-		return new Policy({
-			errorThrower: this.errorThrowerFactory.build(policy_name)	
-		})
+		return new Policy(Object.assign(
+			{ errorThrower: this.errorThrowerFactory.build(policy_name) },
+			policy_args
+		))
 	}
 	
 }

@@ -6,6 +6,7 @@ class BasePolicy {
 	 */
 	constructor(opt) {
 		this.errorThrower = opt.errorThrower
+		this.args = opt.args
 	}
 
 	/**
