@@ -27,10 +27,10 @@ class PolicyFactory {
 			policy_args = policy.args
 		}
 		let Policy = require(`../../${this.policy_path}/${policy_name}`)
-		return new Policy(Object.assign(
-			{ errorThrower: this.errorThrowerFactory.build(policy_name) },
-			policy_args
-		))
+		return new Policy({ 
+			errorThrower: this.errorThrowerFactory.build(policy_name),
+			args: policy_args
+		})
 	}
 	
 }
