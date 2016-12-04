@@ -16,7 +16,7 @@ class BasePolicy {
 	 */
 	approve(validator) {
 		if (!this.constructor._approve(validator, this.args)) {
-			validator.resolve(this.throwError())
+			validator.reject(this.throwError())
 		}else{
 			return validator.next()
 		}
