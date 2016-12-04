@@ -16,7 +16,7 @@ class BasePolicy {
 	 */
 	approve(validator) {
 		if (!this.constructor._approve(validator, this.args)) {
-			this.throwError()
+			validator.resolve(this.throwError())
 		}else{
 			return validator.next()
 		}
@@ -33,7 +33,7 @@ class BasePolicy {
 	}
 
 	throwError(){
-		this.errorThrower.throw()
+		return this.errorThrower.throw()
 	}
 
 
